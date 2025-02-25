@@ -13,3 +13,4 @@ function kullanici() {
   alert(`Kullanıcı Bilgileri: {name: ${isim}, age: ${yas}, job: ${meslek}}`);
   console.log('Kullanıcı Bilgileri: ', kullaniciBilgileri);
 }
+/*commit deneme*/
