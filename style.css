@@ -1,0 +1,35 @@
+h1 {
+  text-align: center;
+}
+.homework {
+  background-color: yellow;
+  border: 1px solid black;
+  border-radius: 30px;
+}
+.btn-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn-container button:nth-child(1) {
+  padding: 10px 20px;
+  background-color: blue;
+  color: azure;
+  width: fit-content;
+  border-radius: 10px;
+  min-width: 150px;
+  cursor: pointer;
+}
+.btn-container button:nth-child(2) {
+  padding: 10px 20px;
+  background-color: red;
+  color: azure;
+  width: fit-content;
+  border-radius: 10px;
+  min-width: 150px;
+  cursor: pointer;
+}
