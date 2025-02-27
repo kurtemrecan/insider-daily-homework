@@ -13,6 +13,10 @@ function sepeteGit() {
     let name = prompt('Sepete eklemek istediğiniz ürünü yazın: ');
     if (name == 'q') break;
     let price = Number(prompt('Ürünün fiyatı: '));
+    if (isNaN(price) || price <= 0) {
+      alert('Geçerli bir fiyat giriniz');
+      continue; //bunu yazmasaydık hatalı giriş yapıldığında döngü devam eder ve ürün sepete eklenirdi!!!!!
+    }
 
     sepet.push({ name, price });
     alert(`${name} ürünü sepete eklendi. Fiyat: ${price} TL`);
