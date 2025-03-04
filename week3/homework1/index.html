@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Student List</h1>
+    <form id="studentForm">
+      <input type="text" id="name" placeholder="Enter name..." required />
+      <input type="text" id="class" placeholder="Enter class..." required />
+      <input type="text" id="lesson" placeholder="Enter lesson..." required />
+
+      <button type="submit">Add Student</button>
+    </form>
+
+    <div class="section">
+      <h3>Student Information</h3>
+      <table id="studentTable">
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Class</th>
+            <th>lesson</th>
+          </tr>
+        </thead>
+        <tbody id="studentTable"></tbody>
+      </table>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
