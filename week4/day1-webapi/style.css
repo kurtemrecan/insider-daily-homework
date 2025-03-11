@@ -1,3 +1,4 @@
+/* Genel body stili */
 body {
   font-family: Arial, sans-serif;
   display: flex;
@@ -9,6 +10,7 @@ body {
   background-color: #f4f4f4;
 }
 
+/* Header kısmı */
 header {
   text-align: center;
   margin-bottom: 20px;
@@ -20,20 +22,30 @@ h1 {
 }
 
 .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   text-align: center;
   background: white;
   padding: 20px;
+  min-height: 300px;
+  min-width: 600px;
+  gap: 20px;
   border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.8);
-  border: 2px solid;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border: 2px solid #e0e0e0;
 }
 
 .btn-container {
-  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+  max-width: 300px;
 }
 
 button {
-  margin: 10px;
   padding: 10px 20px;
   cursor: pointer;
   background-color: #4caf50;
@@ -41,16 +53,44 @@ button {
   border: none;
   border-radius: 5px;
   font-size: 16px;
+  transition: background-color 0.3s ease;
+  width: 100%;
 }
 
 button:hover {
   background-color: #45a049;
 }
 
+.copy-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+}
+
+#copyInput {
+  padding: 10px;
+  font-size: 16px;
+  border: 2px solid #ddd;
+  border-radius: 5px;
+}
+
+.copy-btn {
+  background-color: #4caf50;
+  width: 100%;
+}
+
 #output {
   margin-top: 20px;
+  text-align: center;
   font-size: 18px;
   color: #333;
   word-wrap: break-word;
-  min-height: 40px;
+  min-height: 20px;
+  min-width: 600px;
+  padding: 10px;
+  background-color: #fafafa;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  text-align: center;
 }
