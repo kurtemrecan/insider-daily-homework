@@ -55,3 +55,4 @@ this.showError('');
 ```
 
 satırını ekledim.
+Her şey için teşekkür ederim.
